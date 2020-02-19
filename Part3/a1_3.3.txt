@@ -1,0 +1,29 @@
+5 p-values: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, nan, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0017, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0036, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0003, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0635, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6551, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0088, 0.0348, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0189, 0.0, 0.0, 0.0, 0.0043, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+50 p-values: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, nan, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0017, 0.0, 0.0, 0.0, 0.0001, 0.0, 0.0, 0.0, 0.0, 0.0036, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0003, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0635, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6551, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0088, 0.0348, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0189, 0.0, 0.0, 0.0, 0.0043, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Accuracy for 1k: 0.3539
+Accuracy for full dataset: 0.3720
+Chosen feature intersection: [ 1 20 21 74]
+Top-5 at higher: [ 74   1  21  20 163]
+
+a)   1: Number of words in uppercase
+
+    In my experience, people who are biased generally comment very expressively online and using all caps is one way to show that. 
+
+    20: Average of FAM from Bristol, Gilhooly and Logie norms
+    21: Standard deviation of AoA from Bristol, Gilhooly and Logie norms
+    74: liwc_home
+
+    My attempt to reason why average of FAM, standard deviation of AoA and liwc home are features that help the model classify the comments is that educated people are generally more neutral. They tend to use more complex words. This is much like how research papers (which has to be unbiased and factual) tend to have more advanced or uncommon words in it.  
+   
+b) P-values are generally lower given more data, As the sample size increases, our uncertainty about where the population mean could be decreases.
+
+c)  74: liwc_home
+     1: Number of words in uppercase
+    21: Standard deviation of AoA from Bristol, Gilhooly and Logie norms
+    20: Average of FAM from Bristol, Gilhooly and Logie norms
+   163: receptiviti_self_assured
+
+"receptiviti_self_assured" is another good indicator to show if a comment is bias or not since during an argument, neutral people tend to make sound arguments. People who make arguments based on facts generally speak more confidently since there's no consciousness of guilt. 
+(Please refer to a) for reasons why. 74, 1, 21, 20 are good features to differentiate between classes.) 
+      
+    

@@ -1,0 +1,7 @@
+1000: 0.3679
+5000: 0.4206
+10000: 0.4296
+15000: 0.4494
+20000: 0.4555
+
+The results show that as the training samples increases, the accuracy increases as well. This is expected since increasing the size of the data set should reduce spurious correlations and improve the performance of the model. However, in some situations, overfitting occurs when too many training samples are given to the model. 
